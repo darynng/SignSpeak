@@ -227,11 +227,13 @@ body, html {
   <script>
     function sendmessage(){
       Email.send({
-      SecureToken: " fd8f2dfc-7f43-475d-8a55-6929b5e146b3 ",
-      To : 'huuthucdoannguyen@gmail.com',
-      From : document.getElementById("Email").value,
-      Subject : "Message",
-      Body : "And this is the body"
+        Host: "smtp.elasticemail.com",
+        Username: "huuthucdoannguyen@gmail.com",
+        Passowrd: "Hd02192712$",
+        To : 'huuthucdoannguyen@gmail.com',
+        From : document.getElementById("Email").value,
+        Subject : "Message",
+        Body : "And this is the body"
       }).then(
         message => alert(message)
       );
