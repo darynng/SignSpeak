@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://imageio.forbes.com/blogs-images/kittyknowles/files/2018/04/Glove_Whole_Full-1-1200x675.png?");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">SIGNSPEAK</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#features" class="w3-bar-item w3-button">FEATURES</a>
+      <a href="#order" class="w3-bar-item w3-button">ORDER</a>
+      <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+    
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">FEATURES</a>
+  <a href="#demo" onclick="w3_close()" class="w3-bar-item w3-button">DEMO</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white">
+    <span class="w3-jumbo w3-hide-small" style="text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); padding:120px"><b> The SignSpeak Gloves</b></span></span><br>
+    <span class="w3-xxxlarge w3-hide-large w3-hide-medium">The SignSpeak Gloves</span><br>
+    <span class="w3-xxlarge" style="text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); padding:130px" style="margin-top: 20px"><b>Let us be your voice</span></b><br>
+    <p><a href="#order" class="w3-button w3-white w3-padding-large w3-display-bottom w3-xlarge w3-margin-top w3-opacity w3-hover-opacity-off background-color: #ffffff" style="margin-left: 130px"><b>Order now</b></a></p>
+  </div>
+  <div class="w3-display-bottomleft w3-text-white w3-xlarge" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h1 class="w3-center">ABOUT SIGNSPEAK</h1>
+  <p class="w3-center w3-xlarge">What we value</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-dollar w3-margin-bottom w3-jumbo w3-center"></i>
+      <h3 class="w3-large">Affordable</h3>
+      <p>Do not overpay for what you deserve.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-check-square-o w3-margin-bottom w3-jumbo"></i>
+      <h3 class="w3-large">Efficient</h3>
+      <p>A pair of gloves and an app are all you need.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-clock-o w3-margin-bottom w3-jumbo"></i>
+      <h3 class="w3-large">High-speed</h3>
+      <p>We ensure a smooth conversation.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-shopping-bag w3-margin-bottom w3-jumbo"></i>
+      <h3 class="w3-large">Portable</h3>
+      <p>Always by your side, whenever you need.</p>
+    </div>
+  </div>
+</div>
+
+<!--WHY-->
+<div class="w3-container w3-light-grey" style="padding:120px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <div style="margin-left:30px"> <h2>Why are we doing it?</h2>
+      <p class="w3-large">Imagine a parent hearing the words ‘I love you’ from their deaf child for the first time. </p>
+      <p class="w3-large">Imagine a speech-disabled patient having private conversations with his doctor without a translator in the room. </p>
+      <p class="w3-large">Imagine a non-verbal person getting her dream job without communication barriers.</p>
+      <p class="w3-large">That's why.</p></div>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://s.yimg.com/ny/api/res/1.2/ZDqp7aGWEvImG1QbIwwELg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/a4a70460dbcb59adecf61ee31cb8f5d6" alt="Baby smiles at signs" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="w3-container" style="padding:128px 16px" id="features">
+  <h1 class="w3-center">FEATURES</h1>
+  <p class="w3-center w3-xlarge">Why SignSpeak</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-signing w3-margin-bottom w3-jumbo w3-center"></i>
+      <h3 class="w3-large">Sign</h3>
+      <p>There are over 100 commonly used sign languages. We support any sign language - even your own one!</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-volume-up w3-margin-bottom w3-jumbo"></i>
+      <h3 class="w3-large">Speak</h3>
+      <p>Multiple options for voices, speeds and tone make you sound exactly as you want. Does not matter age or gender. </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-spinner w3-margin-bottom w3-jumbo"></i>
+      <h3 class="w3-large">Translate</h3>
+      <p>We have real-time translation for over 30 languages, so you can speak with anyone from anywhere.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-comments-o w3-margin-bottom w3-jumbo"></i>
+      <h3 class="w3-large">Reply</h3>
+      <p>Our voice recognition technology lets you see the other side of the conversation too, in any language you choose.</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- Order Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="order">
+  <h1>ORDER</h1>
+  <p class="w3-large">Choose the price that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>SignSpeak</b> Gloves</li>
+        <li class="w3-padding-16"><b>USB</b> charger</li>
+        <li class="w3-padding-16"><b>1</b> Year</b> Insurance</li>
+        <li class="w3-padding-16"><b>Wrist</b> casing</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 499</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Order
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>SignSpeak</b> Gloves</li>
+        <li class="w3-padding-16"><b>SignSpeak</b> App</li>
+        <li class="w3-padding-16"><b>5</b> Years</b> Insurance</li>
+        <li class="w3-padding-16"><b>Wireless</b> Speaker</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 799</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Order</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>SignSpeak</b> Gloves</li>
+        <li class="w3-padding-16"><b>USB</b> charger</li>
+        <li class="w3-padding-16"><b>3</b> Years</b> Insurance</li>
+        <li class="w3-padding-16"><b>Gloves</b> case</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 699</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Order</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h2 class="w3-center">CONTACT</h2>
+  <h3 class="w3-center w3-large">Lets get in touch. Send us a message:</h3>
+  <div style="margin-top:48px">
+  <center><p><i class="fa fa-map-marker fa-fw w3-xxlarge"></i> Cincinnati, US</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge" ></i> (+1) 513 151 515</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge"> </i> ss@gmail.com</p></center>
+    <br>
+    <center><form target="_blank" style="width: 50%" onsubmit="sendmessage(); reset(); return false">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required id="Name" name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required id="Email" name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required id="Subject" name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required id="Message" name="Message"></p>
+      <p>
+        <button class="w3-button w3-black w3-margin-middle" type="submit" name="submit_button">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p></center>
+    </form>
+    <!-- Image of location/map -->
+    <img src="https://www.trafficlaw411.com/images/blog/shutterstock_348384155.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendmessage(){
+      Email.send({
+      SecureToken: " fd8f2dfc-7f43-475d-8a55-6929b5e146b3 ",
+      To : 'huuthucdoannguyen@gmail.com',
+      From : document.getElementById("Email").value,
+      Subject : "Message",
+      Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+      }
+  </script>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+
